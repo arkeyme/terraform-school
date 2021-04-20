@@ -41,17 +41,16 @@ resource "aws_instance" "example" {
 resource "aws_s3_bucket" "name" {
 }
 
+resource "aws_s3_bucket" "foo" {
+  # (resource arguments)
+}
+
 output "aws_s3_bucket_id" {
-  description = "Public IP address of the EC2 instance"
+  description = "ID of s3 bucket name"
   value       = aws_s3_bucket.name.id
 }
 
-
 output "aws_s3_bucket_foo_id" {
-  description = "Public IP address of the EC2 instance"
+  description = "ID of s3 bucket foo"
   value       = aws_s3_bucket.foo.id
-}
-
-resource "aws_s3_bucket" "foo" {
-  # (resource arguments)
 }

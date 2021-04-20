@@ -13,9 +13,8 @@ I have these backets on my aws account:
     2021-04-08 13:14:35 ilya-s3-logs
     2021-04-06 13:48:39 terra-back-1339
     2021-04-19 21:30:26 terraform-20210419183023834800000001
-    2021-04-20 10:48:52 terraform-20210420074850077400000001
 
-`terra-back-1339` I use as backend along with DynamoDB for terraform locks files. Other was created for tests. 
+`terra-back-1339` I use as backend along with DynamoDB for terraform lock files. Other was created for tests. 
 
 Declaring bucket in `main.tf`
 

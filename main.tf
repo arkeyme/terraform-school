@@ -47,3 +47,11 @@ output "aws_s3_bucket_id" {
 }
 
 
+output "aws_s3_bucket_foo_id" {
+  description = "Public IP address of the EC2 instance"
+  value       = aws_s3_bucket.foo.id
+}
+
+resource "aws_s3_bucket" "foo" {
+  # (resource arguments)
+}

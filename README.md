@@ -64,7 +64,7 @@ So, bucket already managed by terrafrom.
 
 ## Provide output of terraform graph as a result
 
-The output is: 
+The output of `terraform graph` is: 
 
     digraph {
             compound = "true"
@@ -92,11 +92,11 @@ The output is:
             }
     }
 
-and svg file is:
+and svg file, created by `terraform graph | dot -Tsvg > graph.svg` is:
 
 ![graph.svg](./graph.svg)
 
-Now it's time to `terraform destroy`, please notice that terraform have destroyed imported bucket:
+Now it's time to `terraform destroy`, please notice that terraform have destroyed imported bucket as well as declared in `main.tf`:
 
     aws s3 ls
     2021-04-08 13:14:35 ilya-s3-logs

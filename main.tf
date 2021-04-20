@@ -21,11 +21,11 @@ data "aws_ami" "ubuntu" {
 
   filter {
     name   = "virtualization-type"
-    values = ["hvm"] 
-    }
+    values = ["hvm"]
+  }
 
   owners = ["099720109477"] # Canonical
-                               }
+}
 
 resource "aws_instance" "example" {
   count         = 1

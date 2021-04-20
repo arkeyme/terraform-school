@@ -45,3 +45,5 @@ output "aws_s3_bucket_id" {
   description = "Public IP address of the EC2 instance"
   value       = aws_s3_bucket.name.id
 }
+
+
